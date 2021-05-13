@@ -1,13 +1,17 @@
-
 FROM node:16-alpine
 
-WORKDIR /app_dev
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-ENV PATH /app_dev/node_modules/.bin:$PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package.json /app_dev/package.json
+COPY package.json /usr/src/app/
 
-RUN yarn install --silent
-RUN yarn global add react-scripts@4.0.1 --silent
+RUN yarn 
+RUN yarn global add react-scripts@4.0.1
+
+COPY . /usr/src/app
+
+EXPOSE 3000
 
 CMD ["yarn", "start"]
