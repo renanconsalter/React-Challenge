@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app_production:
+    container_name: production-hostgator-frontend-challenge
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    ports:
+      - '8080:80'
+    environment:
+      - NODE_ENV=production
