@@ -112,7 +112,7 @@ I want to thank you the HostGator organization and the team for the great opport
 <small>Software developer</small>
 </span>
 
-[![LinkedIn Badge](https://img.shields.io/badge/Linkedin-blue?style=for-the-badge&logo=Linkedin&link=https://www.linkedin.com/in/renanconsalter)](https://www.linkedin.com/in/renanconsalter)
+[![LinkedIn Badge](https://img.shields.io/badge/Linkedin-blue?style=for-the-badge&logo=Linkedin&link=https://www.linkedin.com/in/renan-consalter)](https://www.linkedin.com/in/renanconsalter)
 [![Instagram Badge](https://img.shields.io/badge/Instagram-f2f2f2?style=for-the-badge&logo=Instagram&link=https://www.instagram.com/renanconsalter)](https://www.instagram.com/renanconsalter)
 [![Gmail Badge](https://img.shields.io/badge/GMAIL-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:renan.consalter@gmail.com)](mailto:renan.consalter@gmail.com)
 
