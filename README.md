@@ -14,3 +14,4 @@ This project was created by HostGator team with the objective of evaluating know
 - MaterialUI
 - Yarn
 - Axios
+- Docker
