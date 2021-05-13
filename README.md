@@ -50,11 +50,13 @@ Before you begin, you will need to install [Git](https://git-scm.com) on your ma
 
 ## Instructions
 
+The proccess of running the application was fully automated using `Dockefile` and `docker-compose.yml`.
+
 1. First of all, we need to clone this repository with this command:
 
-```
-git clone https://github.com/renanconsalter/hostgator-frontend-challenge.git
-```
+   ```
+   git clone https://github.com/renanconsalter/hostgator-frontend-challenge.git
+   ```
 
 2. Now, we have to run a script shell based in you environment to build an image in Docker:
 
@@ -70,20 +72,20 @@ git clone https://github.com/renanconsalter/hostgator-frontend-challenge.git
    ./run-app.sh --dev
    ```
 
-<small><i>Note</i>: If there is a problem running the `run-app-deploy.sh` file, it is possibly due to the permission, if so, give the file permission with `chmod +x run-app-deploy.sh` and run again.</small>
-
-The proccess was fully automated using `Dockefile` and `docker-compose.yml`
+   <small><i>Note</i>: If there is a problem running the `run-app-deploy.sh` file, it is possibly due to the permission, if so, give the file permission with `chmod +x run-app-deploy.sh` and run again.</small>
 
 3. After that, we have to run our application in browser, but pay atention to this detail first:
 
-   Please, certify that you're not using `port: 8080` for `production` and `port:3001` for `development`.
+   Please, certify that you're not using `port: 8080` for `production` and `port:3000` for `development`.
 
    If you choose `production` environment and in case of your `port: 8080`isn't available, please change the `port` in the respective environment `docker-compose.yml`file.
 
 4. Finally, we are ready to open the browser with our application based by environament:
 
    - [http://localhost:8080](http://localhost:8080) for `production` environment
-   - [http://localhost:3001](http://localhost:3001) for `development`environment.
+   - [http://localhost:3000](http://localhost:3000) for `development`environment.
+
+As you can see, the project has a Docker routine with multistage builds ready.
 
 ## Deploy
 
