@@ -1,5 +1,3 @@
-/* eslint-disable implicit-arrow-linebreak */
-/* eslint-disable no-confusing-arrow */
 import styled from 'styled-components';
 import { colorPalette, breakpoints } from '../../styles/theme';
 
@@ -8,19 +6,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${({ featured }) =>
-    featured
-      ? `border-top: 8px solid ${colorPalette.orange};
-         border-radius: 5px;
-         border-bottom: 4px solid ${colorPalette.orange}`
-      : ''}
 
   ${breakpoints.sm} {
     min-width: 266px;
   }
 
   ${breakpoints.md} {
-    min-width: 331px;
+    min-width: 400px;
   }
 `;
 
@@ -31,6 +23,8 @@ export const Card = styled.div`
   background-color: ${colorPalette.white};
   border-radius: 5px;
   border: 1px solid ${colorPalette.lightBlueWhite};
+
+  ${(props) => props.featured};
 
   ${breakpoints.sm} {
     min-width: 266px;

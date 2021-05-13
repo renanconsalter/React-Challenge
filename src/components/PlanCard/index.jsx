@@ -31,7 +31,9 @@ const PlanCard = ({ plan }) => {
     return {
       value: getBRLFormattedValue(priceOrder),
       valueWithDiscount: getBRLFormattedValue(valueWithDiscount),
-      monthlyValue: getBRLFormattedValue((valueWithDiscount / months).toFixed(2)),
+      monthlyValue: getBRLFormattedValue(
+        (valueWithDiscount / months).toFixed(2),
+      ),
       discountValue: getBRLFormattedValue((priceOrder * 0.4).toFixed(2)),
     };
   }, [period, plan]);
@@ -50,57 +52,71 @@ const PlanCard = ({ plan }) => {
   }, []);
 
   return (
-    <styled.Container featured={plan.name === 'Plano M'}>
-      <styled.Card>
+    <styled.Container>
+      <styled.Card
+        featured={
+          plan.name === 'Plano M'
+            ? `border-top: 8px solid ${colorPalette.orange};
+               border-bottom: 4px solid ${colorPalette.orange};`
+            : ''
+        }
+      >
         <styled.CardHeader>
-          <styled.IconContainer>{getIconByPlanName(plan.name)}</styled.IconContainer>
-          <styled.PlanNameText>
-            {plan.name}
-          </styled.PlanNameText>
+          <styled.IconContainer>
+            {getIconByPlanName(plan.name)}
+          </styled.IconContainer>
+          <styled.PlanNameText>{plan.name}</styled.PlanNameText>
         </styled.CardHeader>
 
         <styled.Divider />
 
         <styled.CardContent>
-
-          <styled.OriginalPrice>
-            {planValue.value}
-          </styled.OriginalPrice>
-            &nbsp;
+          <styled.OriginalPrice>{planValue.value}</styled.OriginalPrice>
+          &nbsp;
           <styled.DiscountPrice>
             {planValue.valueWithDiscount}
           </styled.DiscountPrice>
           <styled.EqualyAsText>equivalente a</styled.EqualyAsText>
           <styled.MainPrice>
             R$
-            <styled.MainPriceValue>{String(planValue.monthlyValue).replace('R$', '')}</styled.MainPriceValue>
+            <styled.MainPriceValue>
+              {String(planValue.monthlyValue).replace('R$', '')}
+            </styled.MainPriceValue>
             /mês*
           </styled.MainPrice>
-
-          <Link to={`/?a=add&pid=${plan.id}&billingcycle=${period}&promocode=PROMOHG40`}>
-            <Button color={plan.name === 'Plano M' ? colorPalette.orange : colorPalette.softBlue}>
+          <Link
+            to={`/?a=add&pid=${plan.id}&billingcycle=${period}&promocode=PROMOHG40`}
+          >
+            <Button
+              color={
+                plan.name === 'Plano M'
+                  ? colorPalette.orange
+                  : colorPalette.softBlue
+              }
+            >
               Contrate Agora
             </Button>
           </Link>
-
           <styled.OneYearDomainFree>
             1 ano de Domínio Grátis
             <styled.InfoIcon src={infoIcon} alt="" />
           </styled.OneYearDomainFree>
-
           <styled.DiscountContainer>
             <styled.DiscountText>
               {`economize ${planValue.discountValue}`}
             </styled.DiscountText>
             <styled.DiscountChip>40% OFF</styled.DiscountChip>
           </styled.DiscountContainer>
-
         </styled.CardContent>
 
         <styled.Divider />
 
         <styled.CardFooter>
-          <styled.FeatureText><span>{plan.name === 'Plano P' ? 'Para 1 site' : 'Sites ilimitados'}</span></styled.FeatureText>
+          <styled.FeatureText>
+            <span>
+              {plan.name === 'Plano P' ? 'Para 1 site' : 'Sites ilimitados'}
+            </span>
+          </styled.FeatureText>
           <styled.FeatureText>
             <span>
               <b>{`${plan.name === 'Plano Turbo' ? '150' : '100'} GB`}</b>
@@ -123,7 +139,6 @@ const PlanCard = ({ plan }) => {
             <span> (https)</span>
           </styled.FeatureText>
         </styled.CardFooter>
-
       </styled.Card>
     </styled.Container>
   );
