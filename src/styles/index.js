@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { colorPalette } from './theme';
 
 export default createGlobalStyle`
   * {
@@ -10,6 +11,7 @@ export default createGlobalStyle`
 
   body {
     font-family: 'Montserrat', sans-serif;
+    background-color: ${colorPalette.softWhite};
   }
 
   button {
