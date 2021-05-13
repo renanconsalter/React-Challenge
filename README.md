@@ -93,6 +93,10 @@ You can access the application deployed on the button below or in this [link](ht
 
 [![Vercel Badge](https://img.shields.io/badge/Run%20app%20on%20vercel-black?style=for-the-badge&logo=vercel&link=https://hostgator-frontend-challenge-renanconsalter.vercel.app)](https://hostgator-frontend-challenge-renanconsalter.vercel.app)
 
+## Extras
+
+The information about the extras of the challenge that project contains can be found [here](https://docs.google.com/document/d/1uXWhhUnxqj_kBR293mJ16wmrq1tmsXzJ9HQpUedYPFo/edit?usp=sharing),
+
 ## Author
 
 I want to thank you the HostGator organization and the team for the great opportunity.
