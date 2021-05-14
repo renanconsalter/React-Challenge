@@ -72,7 +72,7 @@ The proccess of running the application was fully automated using `Dockefile` an
    ./run-app.sh --dev
    ```
 
-   <small><i>Note</i>: If there is a problem running the `run-app-deploy.sh` file, it is possibly due to the permission, if so, give the file permission with `chmod +x run-app-deploy.sh` and run again.</small>
+   <small><i>Note</i>: If there is a problem running the `run-app.sh` file, it is possibly due to the permission, if so, give the file permission with `chmod +x run-app.sh` and run it again.</small>
 
 3. After that, we have to run our application in browser, but pay atention to this detail first:
 
