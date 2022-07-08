@@ -101,11 +101,6 @@ The information about the extras of the challenge that project contains can be f
 
 I want to thank you the HostGator organization and the team for the great opportunity.
 
-<div style="display: flex; align-items: center">
-<div>
-<img style="border-radius: 50px; margin-left: 20px" src="https://media-exp1.licdn.com/dms/image/C4D03AQEgzf8pOp6mwA/profile-displayphoto-shrink_200_200/0/1527887724599?e=1626307200&v=beta&t=FzbIC1YW8T86TknHeJpqQQ96ZL0E34Q-upa_z5s705U" width="100px;" alt="Renan Consalter"/>
-</div>
-
 <b>Renan Consalter</b>
 <br>
 <span>
